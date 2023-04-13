@@ -1,0 +1,102 @@
+.container{
+    background: #e3f9ff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input{
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 8px -8px 15px rgba(255, 255, 255, 0.1),5px -5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    margin: 10px;
+}
+
+.display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+ .display > input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+ }
+
+ .equal{
+    width: 145px;
+    color: #33ffd8;
+ }
+
+ .operator{
+    color: #33ffd8;
+ }
+
+ ::placeholder{
+    color: #33ffd8;
+    transition:top .10s ease;
+ position:left;
+ top:20px;
+ font-size: 33px;
+
+ display: inline-block;
+  animation: 4s placeholders backwards;
+ }
+
+ @keyframes placeholders {
+    to {
+        transform: translateX(calc(100px - 100%));
+    }
+  }
+ 
+ #deji{
+    font-size: small;
+    animation-name: dj;
+    animation-duration: 30s;
+    text-align: left;
+    justify-content: left;
+
+
+ }
+
+ 
+
+
+ marquee {
+    width: 100%;
+    height: 8000%;
+    font-style: italic;
+    color: green;
+    text-align: block;
+    transition-delay: 10ms;
+    animation-duration: 10000ms;
+    animation-name: scrollText;
+    
+ }
+
+ .h2 {
+    display: inline-block;
+    animation: 4s scrollText forwards;
+  }
+  
+  @keyframes scrollText {
+    
+
+    }
+  
